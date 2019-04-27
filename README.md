@@ -18,7 +18,7 @@ Copy these example files into chiffre directory, and run sbt:
 
 sbt:chiffre> testOnly examples.CounterTester
 
-`
+```
 [info] [0.001] Elaborating design...
 [info] [0.155] Done elaborating.
 [info] [0.000] Elaborating design...
@@ -54,4 +54,4 @@ test Counter Success: 0 tests passed in 9 cycles taking 0.034874 seconds
 [error] (Test / testOnly) sbt.TestsFailedException: Tests unsuccessful
 [error] Total time: 3 s, completed Apr 27, 2019 11:29:45 AM
 
-`
+```
