@@ -16,6 +16,36 @@ Copy these example files into chiffre directory, and run sbt:
 
 sbt:chiffre> testOnly examples.CounterTester
 
+### before fault-inject:
+```
+sbt:chiffre> testOnly examples.CounterTester
+[info] Compiling 1 Scala source to /raid1/home/soc/anjf/chiffre/chiffre/target/scala-2.12/classes ...
+[info] Done compiling.
+[info] [0.002] Elaborating design...
+[info] [0.215] Done elaborating.
+Total FIRRTL Compile Time: 522.1 ms
+Total FIRRTL Compile Time: 42.7 ms
+End of dependency graph
+Circuit state created
+[info] [0.001] SEED 1556343005885
+test Counter Success: 1 tests passed in 9 cycles taking 0.019522 seconds
+[info] [0.006] RAN 4 CYCLES PASSED
+[info] CounterTester:
+[info] Counter
+[info] - should increase counter in firrtl
+[info] ScalaTest
+[info] Run completed in 2 seconds, 85 milliseconds.
+[info] Total number of tests run: 1
+[info] Suites: completed 1, aborted 0
+[info] Tests: succeeded 1, failed 0, canceled 0, ignored 0, pending 0
+[info] All tests passed.
+[info] Passed: Total 1, Failed 0, Errors 0, Passed 1
+[success] Total time: 6 s, completed Apr 27, 2019 1:30:07 PM
+
+```
+
+### after fault-inject:
+
 ```
 [info] [0.001] Elaborating design...
 [info] [0.155] Done elaborating.
