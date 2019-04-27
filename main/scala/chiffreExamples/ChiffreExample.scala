@@ -1,5 +1,5 @@
 // See LICENSE.txt for license details.
-package examples
+package chiffreExamples
 
 import chisel3._
 import chiffre._
